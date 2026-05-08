@@ -1,50 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miguel Adler | Portfólio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Estudante </title>
+    <style>
+        /* Reset básico e Fontes */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #f4f4f9; color: #333; line-height: 1.6; }
+       
+        /* Navegação */
+        nav { background: #2c3e50; color: white; padding: 1rem; position: fixed; width: 100%; top: 0; z-index: 1000; display: flex; justify-content: space-between; align-items: center; }
+        nav ul { display: flex; list-style: none; }
+        nav ul li { margin-left: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+ 
+        /* Hero Section */
+        header { height: 60vh; background: linear-gradient(135deg, #3498db, #2c3e50); color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding-top: 60px; }
+        header h1 { font-size: 3rem; margin-bottom: 10px; }
+ 
+        /* Seções Generais */
+        section { padding: 4rem 2rem; max-width: 1100px; margin: auto; }
+        h2 { text-align: center; margin-bottom: 2rem; color: #2c3e50; border-bottom: 2px solid #3498db; display: inline-block; left: 50%; transform: translateX(-50%); position: relative; }
+ 
+        /* Grid de Projetos */
+        .project-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .project-card { background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-info { padding: 1.5rem; }
+        .project-info h3 { margin-bottom: 10px; }
+        .btn { display: inline-block; background: #3498db; color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none; margin-top: 10px; }
+ 
+        /* Rodapé */
+        footer { background: #2c3e50; color: white; text-align: center; padding: 2rem; margin-top: 2rem; }
+    </style>
 </head>
 <body>
-
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Miguel Adler</h1>
-
-      <ul class="menu">
-        <li><a href="#">Início</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
+ 
+    <nav>
+        <div class="logo">Portfólio</div>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
     </nav>
-
-    <div class="hero">
-      <p class="small-text">PORTFÓLIO PESSOAL</p>
-
-      <h2>
-        Técnico em Informática <br />
-        e estudante do IFMG SJE
-      </h2>
-
-      <p class="description">
-        Desenvolvendo soluções modernas, criativas e funcionais
-        para a web e tecnologia.
-      </p>
-
-      <div class="buttons">
-        <a href="#" class="btn">Meus Projetos</a>
-        <a href="https://instagram.com/" class="btn-outline">
-          Instagram
-        </a>
-      </div>
-    </div>
-
-    <div class="scroll">
-      <span>SCROLL</span>
-    </div>
-  </header>
-
+ 
+    <header>
+        <h1>Olá, eu me chamo Miguel</h1>
+        <p>html | javascript | java </p>
+    </header>
+ 
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Meu nome é Miguel, tenho 17 anos e sou estudante de Informática pelo IFMG SJE</p>
+    </section>
+ 
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Modelo de programação</h3>
+                    <p></p>
+                    <a href="#" class="btn">"Em Construção"</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Aprimoramento Suap</h3>
+                    <p></p>
+                    <a href="#" class="btn">Ver Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <section id="contato">
+        <h2>Contato</h2>
+        <p style="text-align: center;">Entre em contato pelo e-mail: <strong>0080871@academico.com.br</strong></p>
+    </section>
+ 
+    <footer>
+        <p>&copy; 2026, Miguel.</p>
+    </footer>
+ 
 </body>
 </html>
+ 
